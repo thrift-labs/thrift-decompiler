@@ -1,0 +1,12 @@
+language: python
+cache: pip
+sudo: false
+python:
+    - "3.7"
+install:
+    - pip install thrift
+script:
+    - thrift --gen py fixture/thriftfiles/alice.thrift
+    - python py/tfirht/simple.py ./gen-py/
+notifications:
+    email: false

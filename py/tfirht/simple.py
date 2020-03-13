@@ -37,7 +37,7 @@ def parse_thrift(ctx, thrift_path):
                 pass
             else:
                 service_name = path.name.strip('.py')
-                print(f'has service{service_name}')
+                print(f'has service {service_name}')
                 services = parse_services(ctx, path)
 
     includes = []

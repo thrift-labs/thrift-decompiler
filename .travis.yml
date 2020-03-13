@@ -8,7 +8,7 @@ before_install:
 install:
     - pip install thrift
 script:
-    - thrift --gen py fixture/thriftfiles/alice.thrift
+    - thrift -r --gen py fixture/thriftfiles/alice.thrift
     - python py/tfirht/simple.py ./gen-py/
 notifications:
     email: false

@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# thrift
+**/fixture/gen-**/
+
 # Distribution / packaging
 .Python
 build/
